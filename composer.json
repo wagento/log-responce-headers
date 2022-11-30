@@ -1,6 +1,6 @@
 {
   "name": "wagento/module-origin-headers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Log the headers sent in a Magento response. Useful for debugging when Varnish is enabled.",
   "type": "magento2-module",
   "authors": [
