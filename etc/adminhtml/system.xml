@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="wagento" sortOrder="999999">
+            <label>Wagento</label>
+        </tab>
+        <section id="wagento" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Origin Headers</label>
+            <tab>wagento</tab>
+            <resource>Wagento_OriginHeaders::config</resource>
+            <group id="origin_headers" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Origin Headers</label>
+                <field id="enable_browser" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable Browser</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Send all origin headers with the response using the "origin-response-" prefix</comment>
+                </field>
+                <field id="enable_log" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable Log</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Log request and response headers in debug.log</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
